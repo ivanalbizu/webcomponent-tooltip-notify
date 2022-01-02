@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebComponent</title>
+    <script src="src/js/hola-mundo.js"></script>
+    <script src="src/js/tooltip-notify.js"></script>
+    <style>
+      h1,
+      h2 {
+        font-family: Verdana, sans-serif;
+      }
+      h1 {
+        font-size: clamp(1.2rem, 4vw, 3rem);
+      }
+      h2 {
+        font-size: clamp(0.9rem, 2.7vw, 2.3rem);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Uso de webcomponents</h1>
+      <h2 style="color: rebeccapurple">
+        Aplicado a un ejemplo
+        <tooltip-notify fill="tomato" bullet-color="purple" count="5">
+          <li>
+            <span
+              ><strong>Automated builds</strong> from personal or public Git
+              repos</span
+            >
+          </li>
+          <li>
+            <span><strong>Deploy</strong> to global edge network</span>
+          </li>
+          <li>
+            <span
+              >Live site previews with a <strong>collaboration UI</strong> for
+              team members</span
+            >
+          </li>
+          <li>
+            <span><strong>Instant rollbacks</strong> to any version</span>
+          </li>
+          <li>
+            <span
+              ><strong>Deploy static assets</strong> & dynamic serverless
+              functions</span
+            >
+          </li>
+        </tooltip-notify>
+        tooltip
+      </h2>
+      <h2 style="color: chocolate">
+        Aplicado a otro ejemplo
+        <tooltip-notify fill="red" count="3">
+          <li>
+            <span><strong>Deploy</strong> to global edge network</span>
+          </li>
+          <li>
+            <span><strong>Instant rollbacks</strong> to any version</span>
+          </li>
+          <li>
+            <span
+              ><strong>Deploy static assets</strong> & dynamic serverless
+              functions</span
+            >
+          </li>
+        </tooltip-notify>
+        tooltip
+      </h2>
+    </main>
+  </body>
+</html>
