@@ -1,5 +1,13 @@
 # Web component
 
+## Arrancar proyecto con ParcelJS
+
+Sobre la raiz del proyecto, con ParcelJS instalado (Yo tengo instalada la versión 1.12.5)
+
+```sh
+parcel index.html
+```
+
 ## Definción de la clase javascript
 
 Creamos la clase con nombre <code>TooltipNotify</code> con nomenclatura PascalCase que extiende de la clase principal <code>HTMLElement</code>
@@ -216,3 +224,7 @@ class TooltipNotify extends HTMLElement {
 ```
 
 Como su nombre puede hacer intuir, uno es para cuando tenemos el WebComponent añadido <code>connectedCallback()</code> y el otro cuando se desconecta <code>disconnectedCallback()</code>
+
+## Codepen del Webcomponent
+
+En este PEN puede verse el <a href="https://codepen.io/ivan_albizu/pen/abLYbRL" target="_blank" rel="noopener">WebComponente funcionando</a>
